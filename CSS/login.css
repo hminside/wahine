@@ -1,0 +1,97 @@
+@import url(/wahine/CSS/default.css);
+@import url(/wahine/CSS/header.css);
+@import url(/wahine//CSS/footer.css);
+
+.login {
+    width: 1000px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 120px;
+    display: flex;
+}
+
+.login_wrapper , .sign_up_wrapper {
+    width: calc(100% / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_wrapper {
+    border-right: 1px solid;
+}
+
+.login_wrapper > h2 , .sign_up_wrapper > h2 {
+    color: var(--point_color);
+    display: block;
+    padding: 50px 0;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.name , .id , .pw , .email  {
+    height: 30px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid #555;
+    background-color: transparent;
+    outline: none;
+}
+
+
+
+.remember-check {
+    font-size: 12px;
+    color: #555;
+}
+
+.remember-check > input[type="checkbox"] {
+    width: 12px;
+    height: 12px;
+
+}
+
+
+.login_btn  {
+    position: absolute;
+    bottom: 120px;
+    width: 300px;
+    height: 35px;
+    outline: none;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 모바일 */
+
+@media screen and (max-width:480px) {
+
+    .login {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .login_wrapper , .sign_up_wrapper {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .login_btn  {
+        bottom:300px;
+    }
+
+}

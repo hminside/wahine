@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahine</title>
+    <link rel="stylesheet" href="/wahine/CSS/login.css">
+    <link href="/wahine/images/logo/icon_logo.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body>
+    <div class="wrapper">
+   
+    <div id="header"></div>
+
+
+    <section class="login">
+
+        <div class="login_wrapper">
+
+            <h2>Login</h2>
+            <form id="login-form" name="login_form" action="/wahine/HTML/main.html">
+                <input type="text" name="userID" placeholder="ID" class="id">
+                <input type="password" name="userPassword" placeholder="Password" class="pw">
+                <label class="remember-check">
+                    <input type="checkbox"> 아이디 저장하기
+                </label>
+                <input type="button" value="Login" class="login_btn" onclick="login()">
+            </form>
+        </div>
+
+
+
+        <div class="sign_up_wrapper">
+
+            <h2>Create Account</h2>
+
+            <form id="login-form" name="sign_up" >
+                <input type="text" name="userName" placeholder="name" class="name">
+                <input type="text" name="userID" placeholder="ID" class="id">
+                <input type="email" name="userEmail" placeholder="Email" class="email">
+                <input type="password" name="userPassword" placeholder="Password" class="pw">
+                <input type="submit" value="Sign up" class="login_btn" onclick="sign()">
+            </form>
+        </div>
+
+    </section>
+
+<div id="footer"></div>
+</div>
+
+<script src="/wahine/script/jquery-3.7.1.min.js"></script>
+<script src="/wahine/script/common.js"></script>
+<script src="/wahine/script/login.js"></script>
+</body>
+</html>

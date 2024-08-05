@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wahine</title>
+    <link rel="stylesheet" href="/wahine/CSS/detail.css">
+    <link href="/wahine/images/logo/icon_logo.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<body onload="init();">
+    <div class="wrapper">
+   
+    <div id="header"></div>
+
+
+    <section class="detail">
+
+        <div class="product">
+            <div class="product_img"><img src="/wahine/images/top/top.jpg" alt=""></div>
+            <div class="product_info">
+                <b>CALL ME WAVE WITH LOVE T-SHIRT (LEMON YELLOW)</b>
+
+                <form name="form" method="get" action="/wahine/HTML/login.html">
+
+                <label for="컬러">color</label>
+                <select class="color" name="color" required>
+                    <option value="" disabled selected>------------------------------------------------------------------------------------------------------</option>
+                    <option value="color">LEMON YELLOW</option>
+                </select>
+
+                <label for="사이즈">size</label>
+                <select class="size" name="size" required>
+                    <option value=""disabled selected>------------------------------------------------------------------------------------------------------</option>
+                    <option value="free">free</option>
+                </select>
+
+                    <div class="amount">수량 : <input type= "hidden" name="sell_price" value="42000">
+                    <input class="number" type="text" name="amount" value="1" size="3" onchange="change();"> 
+                    <input class="add" type="button"  value=" + " onclick="add();">
+                    <input class="del" type="button" value=" - " onclick="del();"><br>
+                    <input type="hidden" name="sum" size="11" readonly>
+                    </div>
+
+                    <div class="price">Total : <p id="my_sum"></p>원</div>
+
+            <div class="shop_btn">
+                <button class="buy" type="submit" onclick="buy()">Buy now</button>
+                <button class="cart" type="submit" onclick="buy()">Add cart</button>
+            </div>
+            </form>
+
+
+            </div>
+        </div>
+
+        <div class="product_detail">
+            <img src="/wahine/images/detail/01.jpg" alt="">
+            <img src="/wahine/images/detail/02.jpg" alt="">
+            <img src="/wahine/images/detail/03.jpg" alt="">
+            <img src="/wahine/images/detail/04.jpg" alt="">
+        </div>
+        
+    </section>
+
+    <button class="scroll_top"><img src="/wahine/images/icon/top.png" alt="탑버튼"></button>
+
+
+<div id="footer"></div>
+</div>
+<script src="/wahine/script/jquery-3.7.1.min.js"></script>
+<script src="/wahine/script/common.js"></script>
+<script src="/wahine/script/scroll_Top.js"></script>
+<script src="/wahine/script/detail.js"></script>
+</body>
+</html>

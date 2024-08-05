@@ -1,0 +1,151 @@
+@import url(/wahine/CSS/default.css);
+@import url(/wahine/CSS/header.css);
+@import url(/wahine//CSS/footer.css);
+
+.detail {
+    width: 1000px;
+    height: 100%;
+    padding-top: 120px;
+    margin: 0 auto;
+}
+
+.product{
+    width: 100%;
+    /* height: 00px; */
+    display:flex;
+}
+
+.product_info {
+    width: 50%;
+    background-color: #ffffffb1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding:0 10px;
+}
+
+.product_info > form > input {
+    color: #333;
+    text-align: center;
+}
+
+.product_info > b {
+    font-size: 20px;
+    word-break: keep-all;
+    padding: 5px 0;
+}
+
+.product_img {
+    width: 50%;
+    height: 100%;
+}
+
+.product_img > img {
+    width: 100%;
+    height: auto;
+}
+
+.product_info > form {
+    margin-top: 20px;
+}
+
+.product_info > form > label {
+    padding: 5px 0;
+}
+
+
+.product_detail {
+    width: 100%;
+}
+
+.product_detail > img {
+    width: 100%;
+}
+
+.product_info > form {
+    display: flex;
+    flex-direction: column;
+}
+
+.color , .size {
+    width: 100%;
+    height: 25px;
+}
+
+.amount {
+    display: flex;
+    padding: 20px 0;
+}
+
+.add , .del {
+    width: 25px;
+    height: 25px;
+}
+
+.number {
+    width: 35px;
+}
+
+.price {
+    position: absolute;
+    bottom: 110px;
+    right: 10px;
+    display:flex;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.shop_btn {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    right: 0px;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+
+}
+.buy , .cart {
+    width: 100%;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy {
+    background-color: #333;
+    color: #fff;
+}
+
+.cart {
+    background-color: #ddd;
+}
+
+@media screen and (max-width:480px) {
+    .detail {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product{
+        /* width: 100%;
+        display:flex; */
+        flex-direction: column;
+    }
+
+    .product_img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .product_info {
+        width: 100%;
+        height: 400px;
+    }
+
+    .scroll_top {
+        display: none;
+    }
+    
+}
